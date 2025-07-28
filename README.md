@@ -38,7 +38,7 @@ A technology solution that integrates real-time vehicle detection with dynamic s
    pip install -r requirements.txt
    ```
 
-4. Download or train the YOLO model weights and place them in the `models/` directory.
+4. Download or train the YOLO model weights.
 
 ## Usage
 
@@ -50,16 +50,12 @@ python simulation.py
 
 The simulation will launch a window showing an urban intersection with vehicles spawning randomly. Adaptive traffic lights will adjust based on detected vehicle count.
 
-### 2. Run the Traffic Management API
+### 2. Run the Vehicle detection and Counter
 
 ```bash
-python app.py
+python test.py
 ```
-
-* The API hosts routes for prediction, history tracking, and signal control logic.
-* Integrate with front-end or additional clients as needed.
 
 ## Dataset
 
-* The dataset is annotated using LabelImg. Images are stored in `data/images/` and annotations in `data/labels/`.
-* To add more data, annotate new frames and place them in the respective directories.
+* The dataset is annotated using LabelImg.
